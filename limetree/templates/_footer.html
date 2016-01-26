@@ -1,0 +1,29 @@
+{% load i18n %}
+
+<div class="main">
+  <!-- footer -->
+  <footer>
+    <div class="col2"><a href="#">All Rights Reserved {% trans "&copy; 2015 &lt;Lime Tree Hospitality&gt;" %}</a>
+
+      <nav>
+        <ul id="footer_menu">
+          <li class="active"><a href="{% url 'home' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'booking' %}">Booking</a></li>
+          <li><a href="{% url 'rooms' %}">Rooms</a></li>
+          <li class="last"><a href="{% url 'locations' %}">Locations</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col1 pad_left1">
+      <ul id="icons">
+        <li><a href="#" class="normaltip"><img src="{{STATIC_URL}}images/icon1.jpg" alt=""></a></li>
+        <li><a href="#" class="normaltip"><img src="{{STATIC_URL}}images/icon2.jpg" alt=""></a></li>
+        <li><a href="#" class="normaltip"><img src="{{STATIC_URL}}images/icon3.jpg" alt=""></a></li>
+        <li><a href="#" class="normaltip"><img src="{{STATIC_URL}}images/icon4.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- {%FOOTER_LINK} -->
+  </footer>
+  <!-- footer end -->
+</div>

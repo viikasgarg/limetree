@@ -1,0 +1,10 @@
+<nav>
+  <ul id="menu">
+    <li class="logo"></li>
+    <li class="{% if active == 'home' %}active{% else %}deactive{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+    <li class="{% if active == 'services' %} active{% else %} deactive{% endif %}"><a href="{% url 'services' %}">Services</a></li>
+    <li class="{% if active == 'booking' %} active{% else %} deactive{% endif %}"><a href="{% url 'booking' %}">Booking</a></li>
+    <li class="{% if active == 'rooms' %} active{% else %} deactive{% endif %}"><a href="{% url 'rooms' %}">Rooms</a></li>
+    <li class="{% if active == 'locations' %} active{% else %} deactive{% endif %}"><a href="{% url 'locations'%}">Locations</a></li>
+  </ul>
+</nav>
